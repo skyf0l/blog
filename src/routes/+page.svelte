@@ -1,7 +1,3 @@
-<script>
-	import Meme from '$lib/assets/blog-on-aws-meme.png';
-</script>
-
 <svelte:head>
 	<title>Skyf0l</title>
 </svelte:head>
@@ -12,9 +8,7 @@
 
 <p class="text-sm">
 	Deployed on
-	<b>AWS Lambda</b>
+	<b>GCP</b>
 	using
 	<b>SvelteKit</b>.
 </p>
-
-<img src={Meme} alt="Blog on AWS meme" class="rounded-xl shadow-md" />
