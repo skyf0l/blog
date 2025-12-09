@@ -6,7 +6,9 @@
 	<title>Skyf0l</title>
 </svelte:head>
 
-<h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight drop-shadow">Skyf0l</h1>
+<h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight drop-shadow">
+	This is Skyf0l's website
+</h1>
 
 <p class="text-sm">
 	Deployed on
