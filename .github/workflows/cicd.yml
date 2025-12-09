@@ -1,0 +1,25 @@
+name: CICD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  blog-ci:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./blog
+
+    steps:
+      - uses: actions/checkout@v6
+      - uses: oven-sh/setup-bun@v2
+
+      - run: bun install
+
+      - run: bun run lint
+      - run: bun run test
+      - run: bun run build
