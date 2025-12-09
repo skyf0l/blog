@@ -4,10 +4,10 @@ import { render } from 'vitest-browser-svelte';
 import Page from './+page.svelte';
 
 describe('/+page.svelte', () => {
-	it('should render h1', async () => {
+	it('should render "Skyf0l" in the homepage', async () => {
 		render(Page);
 
-		const heading = page.getByRole('heading', { level: 1 });
-		await expect.element(heading).toBeInTheDocument();
+		const content = page.getByText('Skyf0l');
+		await expect.element(content).toBeInTheDocument();
 	});
 });
